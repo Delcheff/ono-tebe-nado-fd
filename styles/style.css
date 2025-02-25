@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 50px 98px 50px;
+  padding: 92px 50px 96px 50px;
 }
 
 .header__links-list{
@@ -23,13 +23,19 @@
   list-style: none;
 }
 
+.header__link{
+    text-underline-offset: 4px;
+}
+
 .header__link_active .header__link{
   text-decoration: none;
 }
 
 .header__logo{
   display: block;
-  width: 129.11px;
+  width: 135px;
+  height: 105px;
+  
 }
 
 .address {
@@ -37,6 +43,7 @@
   font-size: 18px;
   line-height: 1.35;
   max-width: 240px;
+  font-style: normal;
 }
 
 .header__address{
@@ -45,6 +52,7 @@
 
 .spec__contacts{
     white-space: nowrap;
+    text-underline-offset: 5px;
 }
 
 /*Стили обложки*/
