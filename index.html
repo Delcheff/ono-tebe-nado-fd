@@ -10,21 +10,24 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
-    <header>
+    <header class="header">
   <!--Навигация-->
-      <nav class="nav_header">
-        <ul>
-          <li><a href="#">главная</a></li>
-          <li><a href="#">посмотреть лоты</a></li>
-          <li><a href="#">об аукционе</a></li>
+      <nav class="header__menu">
+        <ul class="header__links-list">
+          <li class="header__links-list-item header__link_active">
+              <a class="header__link" href="#">главная</a></li>
+          <li class="header__links-list-item">
+              <a class="header__link" href="#">посмотреть лоты</a></li>
+          <li class="header__links-list-item">
+              <a class="header__link" href="#">об аукционе</a></li>
         </ul>
       </nav>
   <!--Логотип-->
-      <a class="logo_header"><img src="./images/logo-white.svg"></a>
+      <a class="header__logo"><img src="./images/logo-black.svg"></a>
   <!--Контакты-->
-      <address class="contacts">
-        <span class="spec_contacts">+9 999 555 5555</span> <!--тел. не переносить-->
-        <span class="spec_contacts">info@sobaka.ge</span> <!--mail. не переносить-->
+      <address class="address header__address">
+        <a class="spec__contacts" href="tel:+99995555555">+9 999 555 5555</a><br> <!--тел. не переносить-->
+        <a class="spec__contacts" href="mailto:info@sobaka.ge">info@sobaka.ge</a><br> <!--mail. не переносить-->
         <p>наб. Принсенграхт 263- 265, Амстердам</p> <!--адрес переносить-->
       </address>
     </header>
@@ -34,14 +37,14 @@
       <section class="cover">
    <!--Заголовок-->     
         <h1>
-          <span class="cover_span">оНО</span>
-          <span class="cover_span_center">ТЕБЕ</span>
-          <span class="cover_span_right">НАДО</span>
+          <span class="cover__span">оНО</span>
+          <span class="cover__span-center">ТЕБЕ</span>
+          <span class="cover__span-right">НАДО</span>
         </h1>
     
         <div class="description">
         <!--Подпись-->
-          <p class="description_text">Аукцион вещей, вкоторые никто не верил</p>
+          <p class="description__text">Аукцион вещей, вкоторые никто не верил</p>
         <!--Кнопка-->
           <button>Сделать ставку</button>
         </div>
@@ -51,28 +54,28 @@
     <!--Заголовок-->
         <h2>Лоты</h2>
     <!--Карточки-->
-        <ul class="card_list">
+        <ul class="card__list">
           <li>
             <a>
               <article class="card">
-                <h3 class="card_title">Фильм режиссёра, который бросил киношколу</h3>
-                <p class="card_text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+                <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
+                <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
               </article>
             </a>
           </li>
           <li>
             <a>
               <article class="card">
-                <h3 class="card_title">Книга, где описан один скучный день из жизни рекламного агента</h3>
-                <p class="card_text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+                <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+                <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
               </article>
             </a>
           </li>
           <li>
             <a>
               <article class="card">
-                <h3 class="card_title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
-                <p class="card_text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+                <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+                <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
               </article>
             </a>
           </li>
@@ -101,12 +104,12 @@
     <footer>
 <!--Контакты-->
       <address class="contacts">
-        <span class="spec_contacts">+9 999 555 5555</span> <!--тел. не переносить-->
-        <span class="spec_contacts">info@sobaka.ge</span> <!--mail. не переносить-->
+        <span class="contacts__spec">+9 999 555 5555</span> <!--тел. не переносить-->
+        <span class="contacts__spec">info@sobaka.ge</span> <!--mail. не переносить-->
         <p>наб. Принсенграхт 263- 265, Амстердам</p> <!--адрес переносить-->
       </address>
 <!--Навигация-->
-      <nav class="nav_footer">
+      <nav class="footer__nav">
         <ul>
           <li><a href="#">главная</a></li>
           <li><a href="#">посмотреть лоты</a></li>

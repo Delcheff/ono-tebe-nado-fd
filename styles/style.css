@@ -1,1 +1,70 @@
 /* место для вашего кода */
+
+/*Стили заголовка*/
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px 98px 50px;
+}
+
+.header__links-list{
+  display: flex;
+  gap: 32px;
+  list-style: circle;
+}
+
+.header__links-list-item{
+  font-size: 18px;
+  line-height: auto;
+}
+
+.header__link_active {
+  list-style: none;
+}
+
+.header__link_active .header__link{
+  text-decoration: none;
+}
+
+.header__logo{
+  display: block;
+  width: 129.11px;
+}
+
+.address {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 1.35;
+  max-width: 240px;
+}
+
+.header__address{
+  justify-self: end;
+}
+
+.spec__contacts{
+    white-space: nowrap;
+}
+
+/*Стили обложки*/
+.cover{
+  padding: 165px 50px 50px 50px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+.lots{
+  margin: 180 24 0 24;
+  
+}
+
+.about{
+  margin: 120 24 24 180;
+}
+
+footer{
+  padding: 0 50;
+}
