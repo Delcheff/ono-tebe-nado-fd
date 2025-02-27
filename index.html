@@ -111,41 +111,61 @@
 <!--About-->
       <section class="about">
     <!--Логотип-->
-        <div>
-          <img src="./images/logo-black.svg">
+        <div class="about__logo">
+          <img class="about__logo-image" src="./images/logo-white.svg">
         </div>
         <div>
     <!--Заголовок-->
-          <h2>Об аукционе</h2>
+          <h2 class="about__title">Об аукционе</h2>
     <!--Контент-->
-          <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
-          <p>Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
+          <p class="about__text about__text-special" >
+            Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+          <p class="about__text">
+            Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
             на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. 
           </p>
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
 <!--Контакты-->
-      <address class="contacts">
-        <span class="contacts__spec">+9 999 555 5555</span> <!--тел. не переносить-->
-        <span class="contacts__spec">info@sobaka.ge</span> <!--mail. не переносить-->
+      <address class="address footer__address">
+        <a class="spec__contacts" href="tel:+99995555555">+9 999 555 5555</a><br> <!--тел. не переносить-->
+        <a class="spec__contacts" href="mailto:info@sobaka.ge">info@sobaka.ge</a><br> <!--mail. не переносить-->
         <p>наб. Принсенграхт 263- 265, Амстердам</p> <!--адрес переносить-->
       </address>
 <!--Навигация-->
-      <nav class="footer__nav">
-        <ul>
-          <li><a href="#">главная</a></li>
-          <li><a href="#">посмотреть лоты</a></li>
-          <li><a href="#">об аукционе</a></li>
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-list-item footer__menu-link_active">
+            <a class="footer__menu-link" href="#">главная</a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link" href="#">посмотреть лоты</a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link" href="#">об аукционе</a>
+          </li>
         </ul>
       </nav>
 <!--Ссылки на медиа-->
-      <ul>
-        <li><a href="#"><img src="./images/yt.svg"></a></li>
-        <li><a href="#"><img src="./images/vk.svg"></a></li>
-        <li><a href="#"><img src="./images/pinterest.svg"></a></li>
+      <ul class="footer__social-list">
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="#">
+            <img class="footer__social-icon" src="./images/yt.svg">
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="#">
+            <img class="footer__social-icon" src="./images/vk.svg">
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="#">
+            <img class="footer__social-icon" src="./images/pinterest.svg">
+          </a>
+        </li>
       </ul>
     </footer>
   </body>
