@@ -17,7 +17,7 @@
   line-height: auto;
 }
 
-.header__link_active {
+.header__links-list-item_active {
   list-style: none;
 }
 
@@ -25,7 +25,7 @@
   text-underline-offset: 4px;
 }
 
-.header__link_active .header__link {
+.header__links-list-item_active .header__link{
   text-decoration: none;
 }
 
@@ -61,6 +61,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  z-index: 1;
   
 }
 
@@ -69,7 +70,7 @@
   inset: 0;
   background-color: #000;
   opacity: .6;
-  z-index: 1;
+  z-index: -1;
 }
 
 .cover__title {
@@ -85,8 +86,6 @@
 .cover__span {
   position:relative;
   display: block;
-  
-  z-index: 2;
 }
 
 .text-center {
@@ -109,7 +108,6 @@
   justify-content: space-between;
   align-items: center;
   position:relative;
-  z-index:2;
   margin-top: 106px;
 }
 
@@ -179,28 +177,24 @@
   align-items: center;
   height: 100%;
   padding:48px 40px;
+  z-index: 1;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 
@@ -210,7 +204,6 @@
   line-height: 1.2;
   color:#fff;
   text-transform:uppercase;
-  z-index: 2;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
@@ -221,8 +214,6 @@
   font-weight: 400;
   line-height: 1.2;
   color:#fff;
-  z-index:2;
-  
 }
 
 .lots__look-more-link {
@@ -271,7 +262,7 @@
   line-height: 1.2;
 }
 
-.about__text-special {
+.about__text:first-child {
   margin-right: 5px;
   margin-bottom: 24px;
 }
@@ -300,11 +291,11 @@
   line-height: auto;
 }
 
-.footer__menu-link_active {
+.footer__menu-list-item_active {
   list-style: none;
 }
 
-.footer__menu-link_active .footer__menu-link {
+.footer__menu-list-item_active .footer__menu-link {
   text-decoration: none;
 }
 
